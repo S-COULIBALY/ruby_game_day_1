@@ -3,10 +3,28 @@
 
 # position = { x: 2 , x: 3}
 
+class Player
+
+  def initialize(x , y)
+    @x = x
+    @y = y
+  end
+
+  def x
+    @x
+  end
+
+  def y
+    @y
+  end
+end
+
+paul = Player.new(3, 4)
+
 def draw(nb_cols, nb_rows, player)
   for n in 1..nb_rows
     for m in 1..nb_cols
-      if n == player[:x] && m == player[:y]
+      if n == player.x && m == player.y
         print "P"
       else
         print "."
@@ -18,4 +36,4 @@ def draw(nb_cols, nb_rows, player)
 end
 # draw(10, 15, { x: 9 , y: 3})
 # draw(10, 15, x: 9 , y: 3)
-draw 10, 15, x: 9 , y: 3
+draw 10, 15, paul
