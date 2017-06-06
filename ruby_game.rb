@@ -3,21 +3,8 @@
 
 # position = { x: 2 , x: 3}
 
-class Player
-
-  def initialize(x , y)
-    @x = x
-    @y = y
-  end
-
-  def x
-    @x
-  end
-
-  def y
-    @y
-  end
-end
+# require_relative('player.rb')
+require_relative'player'
 
 paul = Player.new(3, 4)
 
