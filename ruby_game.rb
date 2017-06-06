@@ -3,7 +3,6 @@
 
 # position = { x: 2 , x: 3}
 
-
 def draw(nb_cols, nb_rows, player)
   for n in 1..nb_rows
     for m in 1..nb_cols
@@ -17,4 +16,6 @@ def draw(nb_cols, nb_rows, player)
   end
   puts
 end
-draw(10, 15, { x: 9 , y: 3})
+# draw(10, 15, { x: 9 , y: 3})
+# draw(10, 15, x: 9 , y: 3)
+draw 10, 15, x: 9 , y: 3
