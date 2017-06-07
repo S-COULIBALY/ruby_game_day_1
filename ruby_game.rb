@@ -24,3 +24,13 @@ end
 # draw(10, 15, { x: 9 , y: 3})
 # draw(10, 15, x: 9 , y: 3)
 draw 10, 15, paul
+puts
+puts
+
+# paul.(x= 1)
+# paul.(y= 2)
+
+paul.x = 1
+paul.y = 2
+
+draw 10, 15, paul
