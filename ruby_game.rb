@@ -13,11 +13,11 @@ paul = Player.new(3, 4)
 ruby = Ruby.new(1, 1)
 
 def draw(nb_cols, nb_rows, player , ruby)
-  for n in 1..nb_rows
-    for m in 1..nb_cols
-      if n == player.x && m == player.y
+  (1..nb_cols).each do |col|
+    (1..nb_rows).each do |row|
+      if col == player.x && row == player.y
         print "P"
-      elsif n == ruby.x && m == ruby.y
+      elsif col == ruby.x && row == ruby.y
         print "R"
       else
         print "."
@@ -39,6 +39,6 @@ puts
 # paul.x = 1
 # paul.y = 2
 puts paul.inspect
-paul.move(11, 5)
+paul.move(2, 5)
 puts paul.inspect
 draw 10, 15, paul, ruby
