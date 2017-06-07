@@ -1,11 +1,4 @@
-class Player
-
-attr_accessor :x, :y
-
-  def initialize(x , y)
-    @x = x
-    @y = y
-  end
+class Player < StaticObject
 
 def move(new_x, new_y)
   # self.x = new_x

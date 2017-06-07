@@ -4,7 +4,9 @@
 # position = { x: 2 , x: 3}
 
 # require_relative('player.rb')
-require_relative'player'
+require_relative 'static_objet'
+require_relative 'player'
+
 
 paul = Player.new(3, 4)
 
@@ -32,7 +34,7 @@ puts
 
 # paul.x = 1
 # paul.y = 2
-
+puts paul.inspect
 paul.move(11, 5)
-
+puts paul.inspect
 draw 10, 15, paul
