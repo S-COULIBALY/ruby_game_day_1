@@ -1,7 +1,6 @@
 class Player
 
-attr_reader :x, :y
-attr_writer :x , :y
+attr_accessor :x, :y
 
   def initialize(x , y)
     @x = x
