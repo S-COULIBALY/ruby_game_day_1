@@ -30,7 +30,9 @@ puts
 # paul.(x= 1)
 # paul.(y= 2)
 
-paul.x = 1
-paul.y = 2
+# paul.x = 1
+# paul.y = 2
+
+paul.move(11, 5)
 
 draw 10, 15, paul
